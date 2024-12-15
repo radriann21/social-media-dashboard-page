@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -7,7 +7,9 @@
     <meta name="generator" content={Astro.generator} />
     <title>Social Media Dashboard</title>
   </head>
-  <body>
+  <body
+    class="min-h-screen max-w-full bg-white dark:bg-dark-very-dark-blue-bg text-light-very-dark-blue-light dark:text-white relative"
+  >
     <slot />
   </body>
 </html>

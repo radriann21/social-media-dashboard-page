@@ -1,0 +1,33 @@
+{
+  "totalFollowers": 23.004,
+  "totalInfo": [
+    {
+      "media": "facebook",
+      "mediaName": "@nathanf",
+      "followers": 1987,
+      "today": 12,
+      "tendency": "up"
+    },
+    {
+      "media": "twitter",
+      "mediaName": "@nathanf",
+      "followers": 1044,
+      "today": 99,
+      "tendency": "up"
+    },
+    {
+      "media": "instagram",
+      "mediaName": "@realnathanf",
+      "followers": "11k",
+      "today": 1099,
+      "tendency": "up"
+    },
+    {
+      "media": "youtube",
+      "mediaName": "Nathan F.",
+      "followers": 8239,
+      "today": 144,
+      "tendency": "down"
+    }
+  ]
+}
