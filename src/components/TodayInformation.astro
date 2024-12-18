@@ -1,3 +1,10 @@
+---
+import data from "../data.json";
+import TodayInfoCard from "./TodayInfoCard.astro";
+
+const { todayInfo } = data;
+---
+
 <section class="mt-20 w-full">
   <h2
     class="font-bold font-global text-xl md:text-3xl text-light-dark-grayish-blue dark:text-white"
@@ -5,5 +12,9 @@
     Overview - Today
   </h2>
 
-  <section class="mt-8 w-full"></section>
+  <section
+    class="mt-8 w-full grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-8 place-items-center"
+  >
+    {todayInfo.map((info) => <TodayInfoCard info={info} />)}
+  </section>
 </section>

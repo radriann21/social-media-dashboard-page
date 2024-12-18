@@ -1,0 +1,37 @@
+---
+const { info } = Astro.props;
+import CaretUp from "./icons/CaretUp.astro";
+import CaretDown from "./icons/CaretDown.astro";
+
+const showColor =
+  info.tendency == "up" ? "text-primary-lime-green" : "text-primary-bright-red";
+---
+
+<article
+  class="w-[290px] p-8 rounded-md bg-light-light-grayish-blue dark:bg-dark-dark-desaturated-blue"
+>
+  <div class="w-full flex items-center justify-between">
+    <h3
+      class="font-bold font-global text-light-dark-grayish-blue dark:text-dark-desaturated-blue text-sm"
+    >
+      {info.title}
+    </h3>
+
+    <img src={info.icon} alt={info.media} />
+  </div>
+
+  <div class="w-full mt-8 flex items-center justify-between">
+    <h3
+      class="font-bold font-global text-3xl text-light-very-dark-blue-light dark:text-dark-desaturated-blue"
+    >
+      {info.amount}
+    </h3>
+
+    <span
+      class=`font-bold font-global ${showColor} flex items-center justify-center text-sm`
+    >
+      {info.tendency == "up" ? <CaretUp /> : <CaretDown />}
+      {info.todayPercentage}%
+    </span>
+  </div>
+</article>

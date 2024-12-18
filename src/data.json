@@ -29,5 +29,71 @@
       "today": 144,
       "tendency": "down"
     }
+  ],
+  "todayInfo": [
+    {
+      "media": "facebook",
+      "title": "Page Views",
+      "amount": 87,
+      "todayPercentage": 3,
+      "tendency": "up",
+      "icon": "/assets/icon-facebook.svg"
+    },
+    {
+      "media": "facebook",
+      "title": "Likes",
+      "amount": 52,
+      "todayPercentage": 2,
+      "tendency": "down",
+      "icon": "/assets/icon-facebook.svg"
+    },
+    {
+      "media": "instagram",
+      "title": "Likes",
+      "amount": 5462,
+      "todayPercentage": 2257,
+      "tendency": "up",
+      "icon": "/assets/icon-instagram.svg"
+    },
+    {
+      "media": "instagram",
+      "title": "Profile Views",
+      "amount": "52k",
+      "todayPercentage": 1375,
+      "tendency": "Up",
+      "icon": "/assets/icon-instagram.svg"
+    },
+    {
+      "media": "twitter",
+      "title": "Retweets",
+      "amount": 117,
+      "todayPercentage": 303,
+      "tendency": "up",
+      "icon": "/assets/icon-twitter.svg"
+    },
+    {
+      "media": "twitter",
+      "title": "Likes",
+      "amount": 507,
+      "todayPercentage": 553,
+      "tendency": "up",
+      "icon": "/assets/icon-twitter.svg"
+    },
+    {
+      "media": "youtube",
+      "title": "Likes",
+      "amount": 107,
+      "todayPercentage": 19,
+      "tendency": "down",
+      "icon": "/assets/icon-youtube.svg"
+    },
+    {
+      "media": "youtube",
+      "title": "Total Views",
+      "amount": 1407,
+      "todayPercentage": 12,
+      "tendency": "down",
+      "icon": "/assets/icon-youtube.svg"
+    }
   ]
 }
