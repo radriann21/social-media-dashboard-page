@@ -1,15 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import TotalInformatioSection from "../components/TotalInformatioSection.astro";
+import TodayInformation from "../components/TodayInformation.astro";
 ---
 
 <Layout>
   <div
-    class="absolute -z-10 h-[220px] w-full bg-light-very-pale-blue-top dark:bg-dark-very-dark-blue-top"
+    class="absolute -z-10 h-[220px] w-full bg-light-very-pale-blue-top dark:bg-dark-very-dark-blue-top rounded-b-xl"
   >
   </div>
 
   <main class="w-full h-screen p-6 md:p-12">
     <TotalInformatioSection />
+    <TodayInformation />
   </main>
 </Layout>

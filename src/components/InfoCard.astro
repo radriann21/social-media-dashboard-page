@@ -1,0 +1,42 @@
+---
+const { totalInfo } = Astro.props;
+
+import CaretUp from "./icons/CaretUp.astro";
+import CaretDown from "./icons/CaretDown.astro";
+
+const showColor =
+  totalInfo.tendency == "up"
+    ? "text-primary-lime-green"
+    : "text-primary-bright-red";
+---
+
+<article
+  class=`w-full md:w-[25%] h-[260px] p-10 rounded-md space-y-8 bg-light-light-grayish-blue dark:bg-dark-dark-desaturated-blue shadow-sm text-center border-t-4 ${totalInfo.media === 'facebook' ? 'border-t-primary-facebook-blue' : totalInfo.media === 'twitter' ? 'border-t-primary-twitter-blue' : totalInfo.media === 'youtube' ? 'border-t-primary-youtube-red' : totalInfo.media === 'instagram' ? 'border-t-primary-instagram-gradient' : null }`
+>
+  <div>
+    <span
+      class="font-bold font-global text-light-dark-grayish-blue dark:text-light-dark-grayish-blue text-center"
+      >{totalInfo.mediaName}</span
+    >
+  </div>
+
+  <div class="text-center w-full">
+    <h3
+      class="font-bold font-global text-7xl text-light-very-dark-blue-light dark:text-white"
+    >
+      {totalInfo.followers}
+    </h3>
+    <p class="uppercase font-thin tracking-[6px] text-light-dark-grayish-blue">
+      Followers
+    </p>
+  </div>
+
+  <div>
+    <span
+      class=`font-bold font-global ${showColor} flex items-center justify-center`
+    >
+      {totalInfo.tendency == "up" ? <CaretUp /> : <CaretDown />}
+      {totalInfo.today} Today
+    </span>
+  </div>
+</article>

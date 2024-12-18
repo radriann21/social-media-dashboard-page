@@ -1,5 +1,9 @@
 ---
 import ToggleTheme from "./ToggleTheme.astro";
+import ListOfInfoCards from "./ListOfInfoCards.astro";
+import data from "../data.json";
+
+const { totalFollowers, totalInfo } = data;
 ---
 
 <section class="w-full h-fit">
@@ -11,7 +15,7 @@ import ToggleTheme from "./ToggleTheme.astro";
       <p
         class="font-semibold text-light-dark-grayish-blue dark:text-dark-desaturated-blue"
       >
-        Total Followers: 23,004
+        Total Followers: {totalFollowers.toLocaleString()}
       </p>
     </div>
 
@@ -25,4 +29,6 @@ import ToggleTheme from "./ToggleTheme.astro";
       <ToggleTheme />
     </div>
   </div>
+
+  <ListOfInfoCards totalInfo={totalInfo} />
 </section>

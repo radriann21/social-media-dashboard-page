@@ -1,0 +1,10 @@
+---
+const { totalInfo } = Astro.props;
+import InfoCard from "./InfoCard.astro";
+---
+
+<div
+  class="mt-12 flex flex-col md:flex-row w-full space-y-8 md:space-y-0 md:space-x-8"
+>
+  {totalInfo.map((data: unknown) => <InfoCard totalInfo={data} />)}
+</div>
